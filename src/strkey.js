@@ -6,8 +6,8 @@ import isString from "lodash/isString";
 import {verifyChecksum} from "./util/checksum";
 
 const versionBytes = {
-  ed25519PublicKey:  6 << 3, // G
-  ed25519SecretSeed: 18 << 3, // S
+  ed25519PublicKey:  16 << 3, // Q
+  ed25519SecretSeed: 25 << 3, // Z
   preAuthTx:         19 << 3, // T
   sha256Hash:        23 << 3  // X
 };
